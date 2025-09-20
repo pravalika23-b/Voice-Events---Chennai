@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+     
+
+<head>  
+    <title>Voice Event Planners</title>
+    
+</head>
+
+<body >
+
+    <!-- Navigtion Bar -->
+    <header class="navbar bg-slate-500 ">
+    <nav flex class="flex justify-around items-center p-6 w-92% mx-auto " >
+    <h1 class="text-[30px] font-[arial] pl-[5px] text-amber-400 hover:text-white ">Voice Event Planners
+    </h1>
+    <div class="nav-links absolute bg-slate-500 top-[-100%] min-h-[40vh] w-full flex items-center px-5 left-0 text-amber-400 sm:static sm:min-h-fit " style=" z-index: 3">
+    <ul class=" gap-8 flex-row  sm:flex gap-10 bg-slate-500">  
+          
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">HOME</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">ABOUT US</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">OUR SERVICES</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">TESTIMONIALS</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">CONTACT US</a></p>
+    
+    </ul> 
+    </div>
+    <div class="flex items-center ga-6">
+    <button class="bg-blue-300 rounded text-white px-4 py-1 hover:bg-blue-400">Contact</button>
+    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl cursor-pointer md:hidden"></ion-icon>    
+    </div>
+    </nav>
+    </header>
+
+<!-- Slideshow Section-->
+
+    <section class=" bg-slate-500">
+      <div class="relative ">
+        
+        <ul id='slider'>
+            
+        <li class=""><img src="C:\Users\hp\Desktop\Grafix UI\voice\Wedding-Flower-Decoration.jpg">
+        <div class="absolute top-30 left-5 h-full flex sm:top-80">
+            <h1 class="text-3xl font-bold text-white my-auto sm:text-7xl  " >Weddings</h1>
+        </div>
+        </li>
+
+        <li class="hidden"><img src="C:\Users\hp\Desktop\Grafix UI\voice\birtday2.jpg" class="sm:pl-25">
+        <div class="absolute top-30 left-5 h-full flex sm:top-70">
+            <h1 class="text-3xl font-bold text-white my-auto sm:text-7xl  " >Birthday</h1>
+        </div>
+        </li>
+
+        <li class="hidden"><img src="C:\Users\hp\Desktop\Grafix UI\voice\corporate.jpg">
+        <div class="absolute top-30 left-5 h-full flex sm:top-80">
+            <h1 class="text-3xl font-bold text-white my-auto sm:text-7xl  " >Others</h1>
+        </div>
+        </li>
+        </ul>
+        
+   <!-- Buttons to move -->     
+        
+        <div class="absolute flex h-full w-full top-0 left-0 justify-between">
+            <button onclick="previous()" class="p-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-9 sm:size-16">
+  <path stroke-line cap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+ 
+            </button>
+ 
+            <button onclick="next()" class="p-2 bg-opacity-50%">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-9 sm:size-16">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+            </button>
+
+        </ul>
+        </div>
+    </div>
+
+<!--  About Us -->
+
+</section>
+
+<section class="h-130 bg-slate-500 p-[10px] sm:h-85" >
+    <div class=" pl-5justify-between mx-auto flex bg-linear-to-r from-amber-400 to-slate-500 ">
+        <div class="w-full ">
+        <h1 class="text-6xl font-arial font-bold items-center pt-30 pb-5 text-black">Event Management In Chennai</h1>
+    
+        <p class="text-4xl text-black pt-10 pb-10 font-[arial]"> Call Us for all Your Happy Occasions</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our services -->
+
+<section class="bg-[#334059] h-380 sm:h-150">
+    <h1 class="text-4xl pl-[30%] font-bold pt-7 sm:text-5xl sm:pl-[40%] font-arial text-white pb-10">Our Services</h1>
+    <div class="flex flex-wrap text-white">
+        <div class="pl-10 sm:p-0" >
+            
+            <img src="C:\Users\hp\Desktop\Grafix UI\voice\wedding 2.webp" class=" p-5 bg-white  min-h-80 max-w-80 flex flew-wrap relative ml-10  pb-15">
+            <h1 class="font-bold text-2xl ml-20 mt-5 text-amber-400 ">Wedding & Reception</h1>
+            <p class="ml-7 pb-10">Decoration, Photography, Catering and many more...</p>
+        </div>
+
+        <div class="pl-10">
+            
+            <img src="C:\Users\hp\Desktop\Grafix UI\voice\birthday2.webp" class=" p-5 bg-white  min-h-80 max-w-80 flex flew-wrap relative ml-12 pb-15">
+            <h1 class="font-bold text-2xl ml-30 mt-5 text-amber-400 ">Birthday Parties</h1>
+            <p class="ml-20 pb-10">Decoration, Venue, Food and more...</p>
+        </div>
+
+        <div class="pl-2">
+            
+            <img src="C:\Users\hp\Desktop\Grafix UI\voice\baby.png" class=" p-5 bg-white pl-5 min-h-80 max-w-80 flex flew-wrap relative ml-20 pb-15">
+            <h1 class="font-bold text-2xl ml-45 mt-5 text-amber-400">Baby Shower</h1>
+            <p class="ml-33"> Backdrop, Photoshoot, and Food</p>
+        </div>
+        </div>
+
+
+</section>
+
+<!--testimonials-->
+
+<section class="h-screen bg-[#8DADDF] ">
+    <h1 class="text-4xl font-arial font-bold text-black pl-35 pt-5 sm:text-5xl sm:pl-[40%] h-5 pr-40" >Testimonials</h1>
+    <div class="flex flex-wrap mt-5 sm:ml-30">  
+        <div class="bg-white rounded-full w-[40%] h-[30%]  ml-10 mt-15">
+            <h2 class="pt-16 pb-16 pl-7 text-xl font-arial font-bold sm:pl-40">  Amazing works <br>- Ramkumar</h2>
+        </div>
+        <div class="bg-white rounded-full w-[40%] h-[30%]  ml-10 mt-15">
+            <h2 class="pt-16 pb-16 pl-8 text-xl font-arial font-bold sm:pl-40">  Well planned <br>-Vinoth Babu</h2>
+        </div>
+        <div class="bg-white rounded-full w-[40%] h-[30%]  ml-10 mt-15">
+            <h2 class="pt-16 pb-16 pl-10 text-xl font-arial font-bold sm:pl-40">  Low Budget <br>  -  Govind</h2>
+        </div>
+        <div class="bg-white rounded-full w-[40%] h-[30%]  ml-10 mt-15">
+            <h2 class="pt-16 pb-16 pl-10 text-xl font-arial font-bold sm:pl-40">  Trusted by <br>400+ Clients</h2>
+        </div>
+    </div>
+</section>
+
+<!-- contact form -->
+
+<div style="background-color: rgb(188, 189, 184);" class="h-100 sm:h-120 pl-5 sm:pl-[30%]">
+    <h1 class="text-3xl font-bold font-arial pl-35 pt-5 text-[#334059] sm:text-5xl">Contact Page</h1>
+    <h2 class="text-2xl font-bold font-arial pl-10 pt-5 pb-10 text-[#8DADDF] sm:text-3xl">
+        Enter your Details to Contact Us :
+    </h2>
+<centre>
+<div>
+    <form class="pl-7 pb-5 sm:pl-[9%]">
+        
+        <label class="text-xl font-bold font-arial pl-10 pt-5  sm:text-3xl">Name:</label>
+        <input class="border border-black ml-10" type="text" required /><br /><br />
+
+        <label class="text-xl font-bold font-arial pl-10 pt-5  sm:text-3xl">Email:</label>
+        <input class="border border-black ml-12" type="email"required /><br /><br />
+
+        <label class="text-xl font-bold font-arial pl-10 pt-5 sm:text-3xl">Message:</label>
+        <textarea class="border border-black ml-5" id="message" required></textarea><br /><br />
+
+    </form>
+<button class="bg-blue-400 rounded text-white px-4 py-1 hover:bg-blue-500 ml-45 sm:ml-60 p-2">Submit</button>
+</div> 
+</centre>
+
+</div>
+
+
+
+
+<!-- footer -->
+
+
+<header class="navbar bg-linear-to-r from-amber-400 to-slate-500 ">
+    <nav flex class="flex justify-between items-center p-6 w-92% mx-auto " >
+    <h1 class="text-[30px] font-[arial] pl-[5px] hover:text-white ">Voice Event Planners
+    </h1>
+    <div class="nav-links absolute bg-transparent top-[-100%] min-h-[40vh] w-full flex items-center px-5 left-0 bg-linear-to-r from-amber-400 to-slate-500 sm:static sm:min-h-fit">
+    <ul class=" gap-8 flex-row  sm:flex gap-10">  
+          
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">HOME</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">ABOUT US</a></p>
+        <p class="hover:text-white text-[17px] p-1 font-[arial,sans-serif] "> <a href="">OUR SERVICES</a></p>
+        
+    
+    </ul> 
+    </div>
+    <div class="flex items-center ga-6">
+    <button class="bg-blue-300 rounded text-white px-4 py-1 hover:bg-blue-400">Contact</button>
+    
+</header>
+
+
+
+
+
+
+
+</body>
+
+<!-- script for menu bar and slideshow -->
+
+<script>
+    const navlinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name==='menu' ? 'close' : 'menu'
+        navlinks.classList.toggle('top-[15%]')
+    } 
+
+</script>
+
+<script>
+currentid = 1;
+sliderElement = document.getElementById('slider')
+totalSlides= sliderElement.childElementCount;
+
+
+function next(){
+    if(currentid<totalSlides){
+        currentid++;
+        showSlide()
+    }
+}
+
+function previous(){
+    if(currentid>1){
+        currentid--;
+        showSlide()
+    }
+
+}
+
+function showSlide(){
+    slides = document.getElementById('slider').getElementsByTagName('li')
+    for(let index=0; index < totalSlides; index++){
+        const element = slides[index];
+        if(currentid===index+1){
+            element.classList.remove('hidden')
+        }else{
+            element.classList.add('hidden')
+        }
+    }
+}
+</script>
